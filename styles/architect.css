@@ -6,3 +6,35 @@
   font-weight: 400;
   font-style: normal;
 }
+.header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.text-title {
+  color: #131313;
+  font-size: 2em;
+}
+.text-gray {
+  color: rgba(66, 66, 66, 1);
+}
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  justify-content: space-between;
+}
+.nav-item {
+  list-style: none;
+  margin-right: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar,
+.banner {
+  max-width: 1440;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
