@@ -50,6 +50,9 @@
   font-size: 4rem;
   font-weight: 700;
 }
+.banner-description {
+  color: #727272;
+}
 .banner-content {
   max-width: 850px;
   margin: 0 auto;
@@ -65,10 +68,114 @@
   font-weight: 600;
   font-size: 1.25rem;
 }
+.banner img {
+  width: 100%;
+  border-radius: 8px;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+main > section {
+  margin-left: 130px;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  margin-bottom: 130px;
+}
+.teams {
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+}
+.team-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  border-radius: 10px;
+}
+.team-image-container img {
+  width: 80%;
+  align-items: center;
+}
+.our-features {
+  margin: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: 500;
+  /* color: #727272; */
+}
+.feature-description {
+  font-size: 1rem;
+  color: #727272;
+}
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.fact {
+  border: 2px solid #ff900e;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.fact-icon {
+  width: 45px;
+  height: 45px;
+  align-items: center;
+}
 @media screen and (max-width: 756px) {
   .navbar,
   .nav-links,
   .banner {
     flex-direction: column;
+  }
+
+  .navbar,
+  .banner {
+    padding: 10px 10px;
+  }
+  main > section {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .teams {
+    flex-direction: column-reverse;
+  }
+  .team-image-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .our-features {
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams {
+    flex-direction: column;
+  }
+  .our-features {
+    margin: 10 px;
+  }
+  .team-image-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  main > section {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
