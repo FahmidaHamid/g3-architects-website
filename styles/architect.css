@@ -204,6 +204,49 @@ main > section {
   height: 40px;
   align-items: center;
 }
+.sponsors {
+  margin-left: 240px;
+  margin-right: 240px;
+  /* width: 542px;
+  height: 130px; */
+}
+.sponsor-intro {
+  text-align: center;
+  margin-bottom: 50px;
+  /* align-items: center; */
+}
+.sponsor-title {
+  font-size: 3rem;
+  font-weight: 500;
+  /* border-left: 5px solid #ff900e; */
+}
+.sponsor-description {
+  font-size: 1rem;
+  color: #727272;
+}
+
+.sponsor-icons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-left: 240px;
+  margin-right: 240px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff4e7;
+  max-width: 1440px;
+  height: 200px;
+  margin: 0 auto;
+}
+.footer-description {
+  color: rgba(66, 66, 66, 1);
+  font-size: 1.25rem;
+}
 @media screen and (max-width: 756px) {
   .navbar,
   .nav-links,
