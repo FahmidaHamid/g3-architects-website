@@ -35,13 +35,18 @@
   font-size: 1.2rem;
   font-weight: 500;
 }
-.navbar,
-.banner {
+.navbar {
   max-width: 1440px;
   margin: 100px auto;
   padding: 130px 0px;
+  margin-bottom: 0px;
 }
 .banner {
+  max-width: 1440px;
+  padding: 130px 0px;
+  margin: 100px auto;
+  margin-top: -200px;
+  margin-bottom: 45px;
   justify-content: center;
   align-items: center;
 }
@@ -254,7 +259,10 @@ footer {
   .our-features {
     flex-direction: column;
   }
-
+  .banner {
+    padding: 10px 0px;
+    margin: 0px auto;
+  }
   .navbar,
   .banner {
     padding: 10px 10px;
@@ -272,7 +280,8 @@ footer {
     grid-template-columns: 1fr;
     gap: 12px;
   }
-  .our-features {
+  .our-features,
+  .some-facts {
     margin: 10px;
   }
   .facts-container {
@@ -295,6 +304,17 @@ footer {
   }
   .badge-button {
     margin: 0;
+  }
+  .sponsors,
+  .sponsor-title,
+  .sponsor-intro,
+  .sponsor-description {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .sponsor-icons {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -334,7 +354,14 @@ footer {
   .featured-arch > img {
     width: 100%;
   }
-  .badge-button {
+  .badge-button,
+  footer,
+  .sponsors,
+  .sponsor-intro {
     margin: 0;
+    padding: 0px;
+  }
+  .sponsor-icons {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
